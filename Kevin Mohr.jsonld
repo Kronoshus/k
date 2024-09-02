@@ -54,16 +54,10 @@
   "hashAlgorithm": "blake2b-256",
   "body": {
     "givenName": "Kevin Mohr",
-    "motivations": "Be good at governance",
-    "objectives": "Be good at governance",
-    "paymentAddress": "addr1q804fjytzm7wx68ezvnj2htmlnchr6pv7l4a673ysev3pd4mpssay6leqwh60kf6rq0l9ju6squkmv5fd2rdjf38xewsjpr52a",
-    "qualifications": "Be good at governance",
-    "references": [
-      {
-        "@type": "Other",
-        "label": "Label",
-        "uri": "https://x.com/My__X__Account"
-      }
-    ]
+    "motivations": "",
+    "objectives": "",
+    "paymentAddress": "addr_test1qzcj2d79sn26nwzjewmylrmecj9q7lzxys4ulr9ne6p5yhwufazmrq9hgkkz2rt5fkd609n00czenyqq4sqefpne9fusf30n6n",
+    "qualifications": "",
+    "references": []
   }
 }
