@@ -1,0 +1,63 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP108": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP108:body",
+      "@context": {
+        "references": {
+          "@id": "CIP108:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP108:referenceHash",
+              "@context": {
+                "hashDigest": "CIP108:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "title": "CIP108:title",
+        "abstract": "CIP108:abstract",
+        "motivation": "CIP108:motivation",
+        "rationale": "CIP108:rationale"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "abstract": "Article: Election Procedure\n(a) In general. A period of at least 6 Epochs will be given to notify the community of an election. During the 7th Epoch, all nominations for open seats will be collected. The community will have the next 2 proceeding Epochs (Epoch 8 & 9) to vote on the candidates. At the 10th Epoch, all election results will be finalized. Results will be published and finalized within the next 2 Epochs. An appeal may be made by any member of the community before the end of the 12th Epoch.In total, elections will last 60 days.\n\n(b) Special Circumstances. In the case of emergency or special circumstances, a period of at least 2 Epochs will be given to notify the community of an election.\n\n(c) All elections must occur on-chain via a designated entity such as gov.tools. A valid entity must be approved by the Constitutional Committee and voted on by DReps.\n",
+    "motivation": "Many in the Cardano community complained of various factors such as they did not have enough time to get to know the candidates or the election is rushed. This ensures that a very minimal but effective standard is at least in place when it comes to how elections will be ran in the future.",
+    "rationale": "On-chain governance if ran smoothly and correctly creates a better form of voting than anything outside of crypto. The problem is the first election did not utilize on-chain governance to its full extent. This clarifies and sets a standard to host better elections.",
+    "references": [
+      {
+        "@type": "Other",
+        "label": "https://x.com/My__X__Account",
+        "uri": "https://docs.google.com/document/d/1ODPsFj1wBc8NqAwdxvgwJvBIg7hAkCR5B0N-IOQx7K8/edit"
+      }
+    ],
+    "title": "Integrate Election Procedure into the Cardano Constitution"
+  }
+}
